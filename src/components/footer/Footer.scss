@@ -1,0 +1,113 @@
+.footer {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  @media (max-width: 701px) {
+    padding: 1rem 0rem 0rem 0rem;
+    height: 180px;
+  }
+}
+
+.footer-links-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 701px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 701px) {
+      width: 100%;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: auto;
+        height: 60px;
+        cursor: pointer;
+        @media (max-width: 701px) {
+          width: auto;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.socials-containers {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 701px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.social {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin: 0 1.5rem;
+  transition: all 0.1s ease;
+  @media (max-width: 701px) {
+    width: 40px;
+    height: 40px;
+  }
+  a {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      filter: invert(48%) sepia(73%) saturate(592%) hue-rotate(348deg)
+        brightness(96%) contrast(90%);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.footer-copyright-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 1.8rem;
+    color: var(--color-orange);
+    font-weight: 400;
+    @media (max-width: 701px) {
+      font-size: 1.5rem;
+    }
+  }
+}

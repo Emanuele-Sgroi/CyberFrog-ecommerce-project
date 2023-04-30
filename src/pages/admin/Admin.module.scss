@@ -1,0 +1,45 @@
+.desktop_admin {
+  background-color: #111114;
+  padding: 0;
+  width: 100%;
+  min-height: 80.3vh;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.admin {
+  display: flex;
+  background-color: #111114;
+  .navbar {
+    width: 25%;
+    min-height: 76.3vh;
+    background-color: #111114;
+  }
+  .content {
+    width: 75%;
+    padding: 0;
+    background-color: #111114;
+  }
+}
+
+// mobile admin
+.mobile_admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111114;
+  padding: 3rem;
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
+  div {
+    h2 {
+      color: var(--color-white);
+    }
+    p {
+      color: rgb(201, 201, 201);
+    }
+  }
+}

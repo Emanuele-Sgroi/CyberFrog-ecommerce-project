@@ -1,0 +1,50 @@
+.app__header_nav_cart {
+  padding: 0.6rem;
+  background-color: var(--color-white);
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+
+  &:hover {
+    h6 {
+      color: var(--color-orange);
+    }
+    svg {
+      transform: rotate(10deg);
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+      font-size: 1.4rem;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease-out;
+    }
+    svg {
+      transform: rotate(-22deg);
+      transition: all 0.3s ease-out;
+    }
+    p {
+      width: 15px;
+      height: 15px;
+      margin: 0 0.2rem 0 0.5rem;
+      background-color: #fe9636;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      padding: 1rem;
+      font-weight: 600;
+    }
+  }
+}

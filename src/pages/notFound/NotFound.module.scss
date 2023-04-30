@@ -1,0 +1,31 @@
+.notFound_container {
+  width: 100%;
+  min-height: 85vh;
+  background-color: #111114;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 15rem;
+    color: white;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    color: white;
+  }
+}

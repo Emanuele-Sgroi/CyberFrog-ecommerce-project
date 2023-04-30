@@ -1,0 +1,41 @@
+.status {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem 0;
+  .card {
+    padding: 1rem;
+    border: 2px solid white;
+    h4 {
+      color: white;
+    }
+  }
+
+  form {
+    select {
+      display: inline-block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 1rem;
+      margin: 1rem auto;
+      width: 100%;
+      border: 1px solid #777;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+}
+
+.update_button {
+  padding: 0.7rem;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid var(--color-orange);
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    background-color: var(--color-orange);
+  }
+}

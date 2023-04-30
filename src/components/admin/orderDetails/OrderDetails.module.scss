@@ -1,0 +1,102 @@
+.table {
+  padding: 1rem 3rem;
+  width: 100%;
+  overflow-x: auto;
+
+  h2,
+  p {
+    color: white;
+  }
+
+  .back_btn {
+    width: 150px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid white;
+      padding: 0.6rem;
+      border-radius: 6px;
+      color: white;
+      transition: all 0.1s ease-in-out;
+      font-weight: 500;
+      @media (max-width: 420px) {
+        font-size: 12px;
+      }
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.4rem;
+    color: white;
+
+    thead {
+      tr {
+        th {
+          background-color: black;
+        }
+      }
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      &.icons {
+        > * {
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+  }
+  .summary {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    .card {
+      padding: 1rem;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+          color: var(--color-danger);
+        }
+      }
+      button {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+.count {
+  display: flex;
+  align-items: center;
+  button {
+    border: 1px solid var(--darkblue);
+  }
+  & > * {
+    margin-right: 1rem;
+  }
+}

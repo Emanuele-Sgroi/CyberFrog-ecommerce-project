@@ -1,0 +1,17 @@
+.no_access_container {
+  width: 100%;
+  min-height: 85vh;
+  background-color: #111114;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    h2 {
+      color: var(--color-white);
+    }
+    p {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

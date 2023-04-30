@@ -1,0 +1,90 @@
+.checkout_section {
+  width: 100%;
+  min-height: 85vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/cyber-frog-b3768.appspot.com/o/Backgrounds%2FBlur%2Fblur%204.jpg?alt=media&token=294fcf0d-577a-47d2-b972-f215e3144d05");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 735px) {
+    background-image: none;
+    background-color: #111114;
+  }
+}
+
+.checkout_container {
+  width: 35%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1e1e22;
+  padding: 2rem 3rem;
+  @media (min-width: 1661px) {
+    width: 30%;
+  }
+  @media (max-width: 1660px) {
+    width: 35%;
+  }
+  @media (max-width: 970px) {
+    width: 55%;
+  }
+  @media (max-width: 628px) {
+    width: 95%;
+  }
+
+  @media (max-width: 420px) {
+    padding: 1.5rem 2rem;
+  }
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      width: 200px;
+      @media (max-width: 420px) {
+        width: 100px;
+      }
+    }
+
+    h4 {
+      color: rgb(255, 255, 255);
+      font-size: 26px;
+      text-align: center;
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      color: rgb(189, 189, 189);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid white;
+      padding: 1rem;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      @media (max-width: 480px) {
+        padding: 0.7rem;
+        font-size: 13px;
+      }
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+}
