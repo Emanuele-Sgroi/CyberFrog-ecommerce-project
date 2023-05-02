@@ -1,6 +1,6 @@
 # Cyberfrog E-Commerce Project
 
-#### demo will be out soon
+#### demo: https://cyber-frog.co.uk/
 
 Cyberfrog is an e-commerce clothing store developed as a university group project. The project utilizes React JS for the front-end, Node.js (Express) as the backend server, Firebase as the database, Redux for internal storage, Stripe for payments, and SASS as a CSS substitute.
 
