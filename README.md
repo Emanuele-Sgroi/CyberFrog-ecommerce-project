@@ -1,56 +1,156 @@
-# Cyberfrog E-Commerce Project
+# Cyber Frog E-commerce
 
-Cyberfrog is an e-commerce clothing store developed as a university group project. The project utilizes React JS for the front-end, Node.js (Express) as the backend server, Firebase as the database, Redux for internal storage, Stripe for payments, and SASS as a CSS substitute.
+> **A full-stack clothing store built with React, Firebase, and Stripe. Originally developed as a university group project.**
 
-This project is open source and everyone can use it as template. Please remember to connect this app with your email, stripe account anf firebase console. The sensible data has been removed from GitHub for security porpuses. Setting up your Firebase email is crucial as you will need to use this email when login as admin.
+[View Demo](https://emanuele-sgroi.github.io/CyberFrog-ecommerce-project/)
 
-## Getting Started
+![Banner](./screenshot.png)
 
-### Prerequisites
+To see more of the front end please visit the [project website](https://emanuele-sgroi.github.io/CyberFrog-ecommerce-project/) or [my portfolio](https://www.emanuelesgroi.com/portfolio/cyber-frog-e-commerce)
 
-- Node.js v14.17.5 or higher
-- NPM v6.14.14 or higher
+## Table of Contents
 
-### Installation
+- [Overview](#overview)
+- [Core Features](#core-features)
+- [How It Works](#how-it-works)
+- [Why This Project?](#why-this-project)
+- [How to Use](#how-to-use)
+- [Conclusion](#conclusion)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgments] (Acknowledgments)
 
-1. Clone the repository:
+---
 
-#### git clone https://github.com/Emanuele-Sgroi/CyberFrog-ecommerce-project
+## Overview
 
-2. Navigate to the project directory:
+Cyber Frog is a full-stack e-commerce application built as part of a university group project. Users can browse products, register or log in, manage a cart, and complete secure payments using Stripe. Admins have access to a dashboard for managing products, viewing revenue, and updating order statuses. While I didn’t handle the design, I led development across both front end and back end, integrating authentication, payments, state management, and database logic.
 
-#### cd <repository-name>
+---
 
-3. Install dependencies:
+## Core Features
 
-#### Use "npm install". Check JSON for full list.
+1. **Authentication**
 
-4. Run the Frontend:
+   - Sign up, login, logout, and password reset using Firebase Auth..
+   - Supports both email/password and Google sign-in.
 
-#### npm run start:frontend
+2. **Product Filtering & Cart Management**
 
-5. Run the Backend (different terminal):
+   - Users can filter by category, add items to the cart, adjust quantity and size, and view cart totals in real time.
 
-#### npm run start:backend
+3. **Stripe Payments**
 
-## Features
+   - Stripe integration through a custom Express backend.
+   - Users can securely check out, and their order is confirmed on success.
 
-- Browse clothing items by category and subcategory
-- Add items to cart
-- View and modify cart contents
-- Checkout using Stripe payment gateway
-- Sign up and log in using Firebase authentication
-- Leave reviews
-- Check earning with admin dashboard
-- Add, edit, remove and manage products and orders status from the admin dashboard
+4. **Order History & Status Tracking**
 
-## Contributing
+   - Users can view their full order history and order statuses.
+   - Order data is stored in Firestore and includes time, amount, and product details.
 
-This is a university project however, contributions to the Cyberfrog e-commerce project are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or a pull request.
+5. **Admin Panel**
+
+   - Admins can add, edit, or remove products.
+   - Order statuses can be updated (e.g. from “Processing” to “Shipped”).
+   - A dashboard view displays total revenue and current order count.
+
+6. **Email Confirmation**
+
+   - On successful purchase, users receive a confirmation email via EmailJS.
+
+7. **Responsive Layout**
+   - Separate navigation and layout for mobile and desktop views.
+
+---
+
+## How It Works
+
+- **State Management**
+  Redux Toolkit handles global state across authentication, cart, checkout, orders, and filters.
+
+- **Authentication & Database**
+  Firebase handles user login and registration, while Firestore stores user data, products, orders, and reviews.
+
+- **Stripe Checkout**
+  Stripe’s payment flow is handled via an Express backend deployed on Render, with client secret securely retrieved on checkout.
+
+- **Order Processing**
+  After payment, the order is saved in Firestore and a confirmation email is sent automatically to the user.
+
+- **Admin Tools**
+  Admins can access a dashboard to view earnings, manage inventory, and update orders.
+
+---
+
+## Why This Project?
+
+This was a group assignment for a university course, but I led development and built most of the application myself. My goal was to go beyond a simple CRUD system and implement a complete e-commerce experience, from product listings to real payment flows. It also gave me the chance to integrate multiple technologies like Firebase, Stripe, and Express, and manage full-stack architecture in a production-style setup.
+
+---
+
+## How to Use
+
+1. **Clone the repository**
+
+   ```
+   git clone https://github.com/Emanuele-Sgroi/CyberFrog-ecommerce-project
+   cd CyberFrog-ecommerce-project
+   ```
+
+2. **Install Dependencies**
+
+```
+npm install
+```
+
+3. **Run the Frontend and Backend**
+
+```
+npm run start:frontend
+npm run start:backend
+
+```
+
+4. **Environment Setup**  
+   Create a .env file with the following variables:
+
+```
+STRIPE_PRIVATE_KEY=XXXXXXXXXXXX
+REACT_APP_STRIPE_PK=XXXXXXXXXXXX
+REACT_APP_ADMIN_USER=youradminemail@gmail.com
+REACT_APP_FB_API_KEY=XXXXXXXXXXXX
+REACT_APP_EMAILJS_SERVICE_ID=XXXXXXXXXXXX
+REACT_APP_PUBLIC_URL=your public domain or localhost
+REACT_APP_BACKEND_URL=your backend erl or port 8080 (or different one)
+NODE_ENV="production" ## or development'
+
+```
+
+5. **Firebase & Stripe Setup**
+
+- Set up Firebase project and Firestore collections for users, products, and orders. Connect a test Stripe account and enable test mode payments.
+
+---
+
+## Conclusion
+
+This approach seamlessly balances a luxury aesthetic with the simplicity needed for rapid duplication. By employing Next.js, Tailwind, and Contentful, real estate agents can deploy new, polished property sites in minutes, complete with inquiry handling and CRM integration. It’s a fast, scalable solution for showcasing any high-end apartment or condo.
+
+---
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Cyber Frog is a complete e-commerce simulation with real authentication, payments, state management, and admin functionality. It was built to mimic a real-world store, going beyond academic requirements to include a working Stripe flow and full CRUD capabilities. It served as a solid foundation for understanding full-stack development in practice.
+
+---
+
+## Contact
+
+You can contact me here:
+
+- **Email**: em.sgroi@gmail.com
+- **Website**: [emanuelesgroi.com](https://www.emanuelesgroi.com)
 
 ## Acknowledgments
 
@@ -59,6 +159,3 @@ Special thanks to the members of my team:
 - Tommaso Bacci
 - Noemi Baglieri
 - Anca Craciunca
-- Papon Chandra Paul
-- Ridwaan Safarally
-- Shahin Kotarja
