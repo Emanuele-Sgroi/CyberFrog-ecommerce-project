@@ -18,7 +18,7 @@ To see more of the front end please visit the [project website](https://emanuele
 - [Conclusion](#conclusion)
 - [License](#license)
 - [Contact](#contact)
-- [Acknowledgments] (Acknowledgments)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
