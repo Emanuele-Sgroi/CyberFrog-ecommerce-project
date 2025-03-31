@@ -6,10 +6,28 @@ const main_url = process.env.REACT_APP_PUBLIC_URL;
 
 const app = express();
 
-// Specify allowed origin
+// Define allowed origins
+const allowedOrigins = [
+  "https://emanuele-sgroi.github.io",
+  "https://emanuele-sgroi.github.io/CyberFrog-ecommerce-project",
+];
+
 const corsOptions = {
-  origin: main_url,
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps, curl, etc.)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
 };
+
+// // Specify allowed origin
+// const corsOptions = {
+//   origin: main_url,
+// };
 
 // Enable CORS with options
 app.use(cors(corsOptions));
