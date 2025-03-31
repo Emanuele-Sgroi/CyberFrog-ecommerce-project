@@ -2,17 +2,13 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
+const main_url = process.env.REACT_APP_PUBLIC_URL;
 
 const app = express();
 
-// // Specify allowed origin
-// const corsOptions = {
-//   origin: 'https://cyber-frog.co.uk'
-// };
-
 // Specify allowed origin
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: main_url,
 };
 
 // Enable CORS with options
@@ -23,10 +19,10 @@ app.use(express.json());
 const path = require("path");
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static("build"))
+  app.use(express.static("build"));
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "build", "index.html"))
-  })
+    res.sendFile(path.resolve(__dirname, "build", "index.html"));
+  });
 }
 
 app.get("/", (req, res) => {
@@ -81,4 +77,3 @@ app.post("/create-payment-intent", async (req, res) => {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Node server listening on port ${PORT}`));
-

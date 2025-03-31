@@ -130,10 +130,7 @@ const CheckoutForm = () => {
       .confirmPayment({
         elements,
         confirmParams: {
-          // change this to your payment confirmation page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  --- IMPORTANT ---
-          //https://cyber-frog.co.uk/checkout-success
-          //http://localhost:3000/checkout-success
-          return_url: "http://localhost:3000/checkout-success",
+          return_url: `${process.env.REACT_APP_PUBLIC_URL}/checkout-success`,
         },
         redirect: "if_required",
       })
