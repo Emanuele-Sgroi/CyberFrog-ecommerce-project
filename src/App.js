@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <BrowserRouter>
+      <BrowserRouter basename="/CyberFrog-ecommerce-project">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
