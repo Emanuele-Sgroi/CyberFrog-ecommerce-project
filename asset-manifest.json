@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CyberFrog-ecommerce-project/static/css/main.d01e8a42.css",
-    "main.js": "/CyberFrog-ecommerce-project/static/js/main.9b37b795.js",
+    "main.js": "/CyberFrog-ecommerce-project/static/js/main.30ed182a.js",
     "static/media/bg_home5.jpg": "/CyberFrog-ecommerce-project/static/media/bg_home5.84c9db091eda76982260.jpg",
     "static/media/logo_footer.png": "/CyberFrog-ecommerce-project/static/media/logo_footer.702f4a3ff7a3d07f0298.png",
     "static/media/spinner.gif": "/CyberFrog-ecommerce-project/static/media/spinner.75c4521334e47c6e3303.gif",
@@ -13,10 +13,10 @@
     "static/media/emptycart.png": "/CyberFrog-ecommerce-project/static/media/emptycart.a5a28bd706ce40bc1253.png",
     "index.html": "/CyberFrog-ecommerce-project/index.html",
     "main.d01e8a42.css.map": "/CyberFrog-ecommerce-project/static/css/main.d01e8a42.css.map",
-    "main.9b37b795.js.map": "/CyberFrog-ecommerce-project/static/js/main.9b37b795.js.map"
+    "main.30ed182a.js.map": "/CyberFrog-ecommerce-project/static/js/main.30ed182a.js.map"
   },
   "entrypoints": [
     "static/css/main.d01e8a42.css",
-    "static/js/main.9b37b795.js"
+    "static/js/main.30ed182a.js"
   ]
 }
