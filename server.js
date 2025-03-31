@@ -4,9 +4,30 @@ const cors = require("cors");
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const app = express();
-app.use(cors());
+
+// // Specify allowed origin
+// const corsOptions = {
+//   origin: 'https://cyber-frog.co.uk'
+// };
+
+// Specify allowed origin
+const corsOptions = {
+  origin: 'http://localhost:3000'
+};
+
+// Enable CORS with options
+app.use(cors(corsOptions));
+
 app.use(express.json());
-//const path = require("path");
+
+const path = require("path");
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"))
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "build", "index.html"))
+  })
+}
 
 app.get("/", (req, res) => {
   res.send("Welcome! This is the backend server of Cyber Frog!");
@@ -58,5 +79,6 @@ app.post("/create-payment-intent", async (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 4242;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Node server listening on port ${PORT}`));
+

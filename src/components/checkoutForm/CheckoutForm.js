@@ -39,11 +39,9 @@ const CheckoutForm = () => {
     if (!stripe) {
       return;
     }
-
     const clientSecret = new URLSearchParams(window.location.search).get(
       "payment_intent_client_secret"
     );
-
     if (!clientSecret) {
       return;
     }
@@ -133,6 +131,8 @@ const CheckoutForm = () => {
         elements,
         confirmParams: {
           // change this to your payment confirmation page!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  --- IMPORTANT ---
+          //https://cyber-frog.co.uk/checkout-success
+          //http://localhost:3000/checkout-success
           return_url: "http://localhost:3000/checkout-success",
         },
         redirect: "if_required",

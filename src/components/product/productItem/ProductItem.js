@@ -153,9 +153,7 @@ const ProductItem = ({
                 type="button"
                 onClick={() => addToCart(product, selectedSize)}
                 disabled={!selectedSize}
-                className={`${
-                  selectedSize ? styles.button_active : styles.button_disabled
-                }`}
+                className={`${selectedSize ? styles.button_active : styles.button_disabled}`}
               >
                 ADD TO CART
               </button>

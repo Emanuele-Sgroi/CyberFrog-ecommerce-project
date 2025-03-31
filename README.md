@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Cyberfrog E-Commerce Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### demo will be out soon
 
-## Available Scripts
+Cyberfrog is an e-commerce clothing store developed as a university group project. The project utilizes React JS for the front-end, Node.js (Express) as the backend server, Firebase as the database, Redux for internal storage, Stripe for payments, and SASS as a CSS substitute.
 
-In the project directory, you can run:
+This project is open source and everyone can use it as template. Please remember to connect this app with your email, stripe account anf firebase console. The sensible data has been removed from GitHub for security porpuses. Setting up your Firebase email is crucial as you will need to use this email when login as admin.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js v14.17.5 or higher
+- NPM v6.14.14 or higher
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+#### git clone https://github.com/Emanuele-Sgroi/CyberFrog-ecommerce-project
 
-### `npm run build`
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### cd <repository-name>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
 
-### `npm run eject`
+#### Use "npm install". Check JSON for full list.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Run the Frontend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### npm run start:frontend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+5. Run the Backend (different terminal):
 
-## Learn More
+#### npm run start:backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features
 
-### Code Splitting
+- Browse clothing items by category and subcategory
+- Add items to cart
+- View and modify cart contents
+- Checkout using Stripe payment gateway
+- Sign up and log in using Firebase authentication
+- Leave reviews
+- Check earning with admin dashboard
+- Add, edit, remove and manage products and orders status from the admin dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+This is a university project however, contributions to the Cyberfrog e-commerce project are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+Special thanks to the members of my team:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Tommaso Bacci
+- Noemi Baglieri
+- Anca Craciunca
+- Papon Chandra Paul
+- Ridwaan Safarally
+- Shahin Kotarja
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
