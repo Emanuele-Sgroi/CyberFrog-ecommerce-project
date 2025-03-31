@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CyberFrog-ecommerce-project/static/css/main.d01e8a42.css",
+    "main.js": "/CyberFrog-ecommerce-project/static/js/main.77f1f3e0.js",
+    "static/media/bg_home5.jpg": "/CyberFrog-ecommerce-project/static/media/bg_home5.84c9db091eda76982260.jpg",
+    "static/media/logo_footer.png": "/CyberFrog-ecommerce-project/static/media/logo_footer.702f4a3ff7a3d07f0298.png",
+    "static/media/spinner.gif": "/CyberFrog-ecommerce-project/static/media/spinner.75c4521334e47c6e3303.gif",
+    "static/media/dashboard.png": "/CyberFrog-ecommerce-project/static/media/dashboard.951edfc022b1a29dd1ad.png",
+    "static/media/instagram.png": "/CyberFrog-ecommerce-project/static/media/instagram.f77a0d230fd5799789b5.png",
+    "static/media/loader.gif": "/CyberFrog-ecommerce-project/static/media/loader.0cc9112afdc80e9bf4e8.gif",
+    "static/media/success.png": "/CyberFrog-ecommerce-project/static/media/success.3681c0e66d788244dcff.png",
+    "static/media/tiktok.png": "/CyberFrog-ecommerce-project/static/media/tiktok.49b1a7fdabdc892efbab.png",
+    "static/media/emptycart.png": "/CyberFrog-ecommerce-project/static/media/emptycart.a5a28bd706ce40bc1253.png",
+    "index.html": "/CyberFrog-ecommerce-project/index.html",
+    "main.d01e8a42.css.map": "/CyberFrog-ecommerce-project/static/css/main.d01e8a42.css.map",
+    "main.77f1f3e0.js.map": "/CyberFrog-ecommerce-project/static/js/main.77f1f3e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d01e8a42.css",
+    "static/js/main.77f1f3e0.js"
+  ]
+}
