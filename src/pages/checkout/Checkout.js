@@ -45,7 +45,9 @@ const Checkout = () => {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("http://localhost:8080/create-payment-intent", {
+    // http://localhost:8080/create-payment-intent
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
+    fetch(`${backendURL}/create-payment-intent`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
