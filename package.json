@@ -2,6 +2,7 @@
   "name": "starter-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://emanuele-sgroi.github.io/CyberFrog-ecommerce-project",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@reduxjs/toolkit": "^1.9.3",
@@ -34,7 +35,9 @@
     "start": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.1.9"
   }
 }

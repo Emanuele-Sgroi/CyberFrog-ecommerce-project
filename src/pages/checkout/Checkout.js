@@ -44,8 +44,6 @@ const Checkout = () => {
   const description = `Cyber Frog payment --> email: ${customerEmail}, Amount: ${totalAmount}`;
 
   useEffect(() => {
-    // http://localhost:4242/payment
-    //https://cyber-frog.co.uk/payment
     // Create PaymentIntent as soon as the page loads
     fetch("http://localhost:8080/create-payment-intent", {
       method: "POST",
